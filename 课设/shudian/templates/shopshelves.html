@@ -1,0 +1,162 @@
+﻿<html >
+<head style="margin:0px;">
+    <title>无涯管理员界面</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+            text-decoration:none
+        }
+    </style>
+    <form id="form1" action='' method='POST'>
+
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:100px">
+                <li style="float:left;list-style:none;width:80px;"><a href="{{url_for('index')}}" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('shopQuery')}}" style="color:white;text-decoration:none">商品</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('order')}}" style="color:white;text-decoration:none">订单</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">促销</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">统计</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;"><a href="#" style="color:white;text-decoration:none">财务</a></li>
+            </ul>
+        </div>
+        <div style="height:700px;">
+            <!--中间部分-->
+            <div style="float:left;width:13%;height:700px;background-color:lightgray">
+                <br />
+                <ul>
+                    <li style="width:120px;height:50px;text-align:center"><a href="{{url_for('shopQuery')}}">商品查询</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="{{url_for('shopshelves')}}">商品上架</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="{{url_for('shopQuery')}}">商品修改</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="{{url_for('shopQuery')}}">商品下架</a></li>
+
+                </ul>
+
+            </div>
+            <!--中间右侧部分-->
+            <div style="float:left;width:85%;/*height:500px;*/">
+                <div style="margin-top:30px; margin-left: 50px;width: 1200px; height: 680px; background-color: white; border: 1px solid #d0d0d0;">
+                    <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+                        <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+                            <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                                <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">商品上架</li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                            </ul>
+                        </div>
+                        <!--商品上架显示-->
+                    <div style="margin-top:15px;height:34px;">
+                        <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                            <label style="font-weight:700;">书本名称:</label>
+                        </div>
+                        <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                         <input id="Text1" type="text" name="name" style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="名称"/>
+                        </div>
+                    </div>
+                    <div style="margin-top:15px;height:34px;">
+                        <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                           <label style="font-weight:700;">书本图片:</label>
+                        </div>
+                        <div style="float:left;margin-left:5px;padding-right:10px;padding-left:5px;">
+                            <input id="File1" type="file" style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;"/>
+                         </div>
+                     </div>
+                     <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">价格:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <input id="Text2" type="text" name='price' style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="价格" />
+                            </div>
+                      </div>  
+                      <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">ISBN:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <input id="Text3" type="text" name='isbn' style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="ISBN" />
+                            </div>
+                       </div>
+                        <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">作者:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <input id="Text4" type="text" name='writer' style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="作者" />
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">出版社:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <input id="Text5" type="text" name='press' style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="出版社" />
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">出版日期:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <input id="Text6" type="text" name="date" style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:500px;" placeholder="出版日期" />
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">图书分类:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <select id="Select1" name="fenlei" style="display: block;height:42px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;">
+                                    <option value="jxj">计算机科学与网络</option>
+                                    <option value="gl">管理</option>
+                                    <option value="yy">语言学习</option>
+                                    <option value="fl">法律</option>
+                                    <option value="zr">自然科学</option>
+                                    <option value="ys">艺术</option>
+                                    <option value="yy">医药、卫生</option>
+                                    <option value="zh">综合性图书</option>
+                                    <option value="th">童话、故事书</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;height:34px;">
+                            <div style="float:left;width:300px;text-align:right;padding-top:8px;height:27px;">
+                                <label style="font-weight:700;">商品描述:</label>
+                            </div>
+                            <div style="float:left; margin-left:5px;width:660px;padding-right: 10px;padding-left: 5px;">
+                                <textarea id="TextArea1" name='content' style="width:500px; height:150px;font-family:inherit;font-size: inherit;line-height: inherit;overflow:scroll;resize: none;"> 管理信息系统(第6版)是全面介绍管理信息系统概念、结构、技术、应用及其对组织和社会影响的教科书。全书分为5篇: 第1篇介绍管理信息系统的定义、概念和结构等基本知识。</textarea>
+                            </div>
+                        </div>
+                        <div style="margin-top:85px;height:34px;margin-left:-20px">
+                            <button class='btn btn-primary btn-block'>提交</button>
+                            
+                        </div> 
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="float:left;width:100%;height:100px;background-color:greenyellow;margin:0px;">
+
+        </div>
+    </form>
+</body>
+</html>

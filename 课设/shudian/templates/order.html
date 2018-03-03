@@ -1,0 +1,178 @@
+﻿<html >
+<head style="margin:0px;">
+    <title>无涯管理员界面</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+            text-decoration:none
+        }
+    </style>
+    <form id="form1" action='' method='POST'>
+
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:100px">
+                <li style="float:left;list-style:none;width:80px;"><a href="index.html" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="shopQuery.html" style="color:white;text-decoration:none">商品</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="order.html" style="color:white;text-decoration:none">订单</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">促销</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">统计</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;"><a href="#" style="color:white;text-decoration:none">财务</a></li>
+            </ul>
+        </div>
+        <div style="height:700px;">
+            <!--中间部分-->
+            <div style="float:left;width:13%;height:700px;background-color:lightgray">
+                <br />
+                <ul>
+                    <li style="width:120px;height:50px;text-align:center"><a href="order.html">单号查询</a></li>
+                </ul>
+
+            </div>
+            <!--中间右侧部分-->
+            <div style="float:left;width:85%;/*height:500px;*/">
+                <div style="margin-top:30px; margin-left: 50px;width: 1200px; height: 600px; background-color: white; border: 1px solid #d0d0d0;">
+                    <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+                        <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+                            <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                                <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">单号查询</li>
+                                <li style="float: left; padding-left: 240px; font-size: 20px; font-weight: 300; color: gray;">
+                                    <input id="Text1" type="text" style="display: block;height:35px;width:350px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;margin-bottom:1px;" placeholder="&nbsp&nbsp&nbsp&nbsp 3350082760820" />
+                                </li>
+                                <li style="float: left;font-size: 20px; font-weight: 300; color: gray;">
+                                    <input id="ImageButton1" type="button" value="搜索" style="width: 60px; height: 35px" />
+                                </li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                                <label style="font-weight:700;color:black;float:left;">查询列表:</label>
+                                <!--<select id="Select1" name="quyu" style="float:left;height:30px;padding: 6px 6px;font-size:10px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:150px;margin-left:10px">
+                                    <option value="北京">北京</option>
+                                    <option value="深圳">深圳</option>
+                                    <option value="武汉">武汉</option>
+                                    <option value="上海">上海</option>
+                                    <option value="广州">广州</option>
+                                    <option value="成都">成都</option>
+
+                                </select>-->
+                            </div>
+                        </div>
+                        <!--查询列表显示-->
+                        <div style="display: block; margin-top: 20px; margin-left: 40px; width: 1100px; height: 400px;">
+                            <table style="border-spacing: 0; border-collapse: collapse; width: 100%;">
+                                <thead style="display: table-header-group; vertical-align: middle; border-color: inherit; border-top-color: inherit; border-right-color: inherit; border-bottom-color: inherit; border-left-color: inherit; height: 35px;">
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit;">
+
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 31%; text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            时间
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 69%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                           地点和跟踪进度
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody style="display: table-header-group; vertical-align: middle; border-color: inherit;">
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                       
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.28</small><br />
+                                            <a>14:39&nbsp;星期一</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>快递已经接收</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.28</small><br />
+                                            <a>12:49&nbsp;星期一</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>快递员张某正在派送电话：123456789/a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.28</small><br />
+                                            <a>10:39&nbsp;星期一</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>快递已经到达站点</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.27</small><br />
+                                            <a>12:39&nbsp;星期天</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>快递 已到达 武汉市 江夏区</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.26</small><br />
+                                            <a>12:39&nbsp;星期六</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>武汉洪昌区 已发往 武汉市 江夏区/a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <small>2017.10.26</small><br />
+                                            <a>4:39&nbsp;星期六</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd;text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>快递正在揽货</a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+
+                                        
+                                        
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="float:left;width:100%;height:100px;background-color:greenyellow;margin:0px;">
+
+        </div>
+    </form>
+</body>
+</html>

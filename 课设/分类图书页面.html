@@ -1,0 +1,422 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>无涯有书</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+        text-decoration:none
+        }
+        /*img:hover {
+            transform: scale(1.6);
+        }*/
+    </style>
+    <form id="form1" runat="server">
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:150px">
+                <li style="float:left;list-style:none;width:80px;"><a href="登录.aspx" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="注册.aspx" style="color:white;text-decoration:none">热销书籍</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">促销活动</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">关于我们</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">退出</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="login.aspx" style="color:white;text-decoration:none">登录</a></li>
+                <li style="float:right;padding-right:20px;list-style:none">
+                    <img src="images/1.jpg" alt="" style="width:50px; height:50px; border-radius:50%; overflow:hidden;" />
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 30px; margin-left: 230px;width: 1200px; height: 1200px; background-color: white; border: 1px solid #d0d0d0;">
+
+            <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+
+                <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+
+                    <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">全部图书</li>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">分类</li>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">特卖</li>
+                        <li style="float: left; padding-left: 240px; font-size: 20px; font-weight: 300; color: gray;">
+                            <input id="Text1" type="text" style="display: block;height:25px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;margin-bottom:1px;" placeholder="请输入想搜索的内容..." />
+                        </li>
+                        <li style="float: left; padding-left: 5px; font-size: 20px; font-weight: 300; color: gray;">
+                            <input id="ImageButton1" type="button" value="搜索" style="width: 60px; height: 35px" />
+                        </li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                        <label style="font-weight:700;color:black">图书分类大全</label>
+                        <input id="Checkbox1" type="checkbox" />新书
+                        <input id="Checkbox1" type="checkbox" />二手书
+                    </div>
+                </div>
+                <div style="margin-top:5px;height:120px;width:1000px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:140px;text-align:right;padding-top:20px;height:80px;">
+                            <label style="font-weight:700;">计算机与网络:</label>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:860px;text-align:right;height:100px;">
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">数据库</label></a>
+                                
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">网页制作</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">图形图像</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"> <label style="font-weight:500;">软件工程</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">网络通信</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">单片机</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"> <label style="font-weight:500;">操作系统</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"> <label style="font-weight:500;">大数据</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"> <label style="font-weight:500;">Android</label>
+                                </a></div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"> <label style="font-weight:500;">iOS等</label>
+                                </a></div>
+                           
+                        </div>
+                        
+
+                    <div style="float:left;padding-top:5px;">
+                        
+                    </div>
+                    <div style="float:left;padding-top:5px;">
+                        
+                    </div>
+                </div>
+
+            </div>
+                <div style="margin-top:5px;height:120px;width:1000px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:140px;text-align:right;padding-top:20px;height:80px;">
+                            <label style="font-weight:700;">管理:</label>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:860px;text-align:right;height:100px;">
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">市场营销</label></a>
+
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">物流管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">管理学原理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">财务管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">电子商务</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">人力资源管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">项目管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">公共管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">旅游管理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">管理信息系统</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">行政管理等</label>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div style="margin-top:5px;height:120px;width:1000px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:140px;text-align:right;padding-top:20px;height:80px;">
+                            <label style="font-weight:700;">语言学习:</label>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:860px;text-align:right;height:100px;">
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">英语</label></a>
+
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">日语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">法语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">韩语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">古汉语文学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">德语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">意大利语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">阿拉伯语</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">盲文</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">西班牙语等</label>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div style="margin-top:5px;height:120px;width:1000px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:140px;text-align:right;padding-top:20px;height:80px;">
+                            <label style="font-weight:700;">法律:</label>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:860px;text-align:right;height:100px;">
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">经济法</label></a>
+
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">法律法规</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">民法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">商法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">国际法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">诉讼法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">劳动法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">行政法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">婚姻法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">宪法</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">法律知识读物</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">电子商务法等</label>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div style="margin-top:5px;height:120px;width:1000px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:140px;text-align:right;padding-top:20px;height:80px;">
+                            <label style="font-weight:700;">自然科学:</label>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:860px;text-align:right;height:100px;">
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#"><label style="font-weight:500;">数学</label></a>
+
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">化学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">生物科学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">物理</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">力学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">环境科学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">地质学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">天文学</label>
+                                </a>
+                            </div>
+                            <div style="float:left;width:100px;text-align:center;padding-top:20px;height:27px;">
+                                <a href="#">
+                                    <label style="font-weight:500;">海洋学等</label>
+                                </a>
+                        </div>
+
+
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                        <div style="float:left;padding-top:5px;">
+
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </form>
+</body>
+
+</html>
+

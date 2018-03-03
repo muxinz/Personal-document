@@ -1,0 +1,118 @@
+﻿-<html>
+<head>
+
+    <title>无涯有书</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        /*img:hover {
+            transform: scale(1.6);
+        }*/
+    </style>
+    <script type="text/javascript"
+            src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        //checkbox 全选/取消全选
+        var isCheckAll = false;
+        function swapCheck() {
+            if (isCheckAll) {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = false;
+                });
+                isCheckAll = false;
+            } else {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = true;
+                });
+                isCheckAll = true;
+            }
+        }
+    </script>  
+    <form id="form1" action='' method='POST' >
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:150px">
+                <li style="float:left;list-style:none;width:80px;"><a href={{url_for("index")}} style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href={{url_for("sale")}} style="color:white;text-decoration:none">热销书籍</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href={{url_for("sale")}} style="color:white;text-decoration:none">促销活动</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">关于我们</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">退出</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="login.html" style="color:white;text-decoration:none">登录</a></li>
+                <li style="float:right;padding-right:20px;list-style:none">
+                    <img src="../images/1.jpg" alt="" style="width:50px; height:50px; border-radius:50%; overflow:hidden;" />
+                </li>
+            </ul>
+        </div>
+        <div style="height:700px;">
+            <!--中间部分-->
+            <div style="float:left;width:13%;height:700px;background-color:lightgray">
+                <br />
+                <ul>
+                    <li style="width:120px;height:50px;text-align:center"><a href={{url_for("shoppingCart")}}>购物车</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href={{url_for("myForm")}}>订单</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href={{url_for("myInformation")}}>个人信息</a></li>
+                </ul>
+
+            </div>
+            <!--中间右侧部分-->
+            <div style="float:left;width:85%;/*height:500px;*/">
+                <div style="margin-top:30px; margin-left: 50px;width: 1200px; height: 600px; background-color: white; border: 1px solid #d0d0d0;">
+                    <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+                        <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+                            <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                                <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">我的购物车</li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                                <label style="font-weight:700;color:black">购物车列表:</label>
+                                <input id="Checkbox1" type="checkbox" onclick="swapCheck()"/>全选
+                                <div class="form-group">
+                              <button class="btn btn-primary btn-block" style="float:right;margin-right:20px;margin-top:-20px;">结算</button></div>
+                               
+                                
+                            </div>
+                        </div>
+                        <!--购物车列表显示-->
+                        {%for shops in shop%}
+                        <div style="display: block; margin-top: 20px; margin-left: 40px; width: 1100px; height: 600px;">
+                             <div style="margin-top:5px;">
+                                <div style="float:left;padding-top:5px;">
+                                    <ul style="list-style-type:none;">
+                                        <li><img alt="" src="../images/1.jpg" width="200px" height="100px" /></li>
+                                        <li><input id="Checkbox2" type="checkbox" name="name"/>书名：<label style="font-weight:400;color:black" >{{shops.name}}</label></li>
+                                        <li>&nbsp&nbsp&nbsp&nbsp&nbsp价格：<label style="font-weight:400;color:black" >{{shops.price}}</label></li>
+                                    </ul>
+                                </div>
+                         {%endfor%}
+                                 
+                            </div>
+                        </div>0
+        
+</form>
+</body>
+</html>

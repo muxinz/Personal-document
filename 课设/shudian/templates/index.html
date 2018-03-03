@@ -1,0 +1,166 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head >
+
+    <title>无涯有书</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+        text-decoration:none
+        }
+        /*img:hover {
+            transform: scale(1.6);
+        }*/
+        .id1 {
+            width:120px;
+            height:50px;
+            text-align:center;
+            display: block;
+        }
+        .id2 {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            line-height: 35px;
+            display: none;
+            float:left;
+            margin-top:-50px;
+            margin-left:120px;
+        }
+
+        .id3 {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            line-height: 35px;
+            display: block;
+            float:left;
+            margin-top:-50px;
+            margin-left:120px;
+        }
+    </style>
+    <script language="javascript">
+
+
+function displayDiv1(){
+
+    var oDiv1=document.getElementById("id1");
+    var oDiv2=document.getElementById("id2");
+    oDiv1.className="id1";
+    oDiv2.className="id2";
+
+}
+function displayDiv2(){
+
+    var oDiv2=document.getElementById("id2");
+    var oDiv1=document.getElementById("id1");
+    //oDiv1.className="id2";
+    oDiv2.className="id3";
+}
+
+    </script>
+    <form id="form1" runat="server">
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:150px">
+                
+                <li style="float:left;list-style:none;width:80px;"><a href="{{url_for('index')}}" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">热销书籍</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">促销活动</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">关于我们</a></li>
+                {%if user%}
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('shoppingCart')}}" style="color:white;text-decoration:none">{{user.username}}</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="{{url_for('login')}}" style="color:white;text-decoration:none">注销</a></li>
+                {%else%}
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('login')}}" style="color:white;text-decoration:none">登陆</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('regist')}}" style="color:white;text-decoration:none">注册</a></li>
+                {%endif%}
+               
+            </ul>
+        </div>
+        <!--左侧-->
+        <div style="height:700px;">
+            <!--中间部分-->
+            <div style="float:left;width:15%;height:700px;background-color:lightgray">
+                <br />
+                <div style="margin-left:80px;">
+                    <div style="width:120px;height:50px;text-align:center"><a href="{{url_for('classification')}}">计算机与网络</a></div>
+                    <div style="width:120px;height:50px;text-align:center"><a href="{{url_for('classification')}}">管理</a></div>
+                    <div style="width:120px;height:50px;text-align:center"><a href="{{url_for('classification')}}">语言学习</a></div>
+                    <div style="width:120px;height:50px;text-align:center"><a href="{{url_for('classification')}}">法律</a></div>
+                    <div style="width:120px;height:50px;text-align:center"><a href="{{url_for('classification')}}">自然科学</a></div>
+                </div>
+            </div>
+
+            <!--右侧-->
+            <div style="margin-top: 30px; margin-left: 230px;width: 1200px; height: 1200px; background-color: white; border: 1px solid #d0d0d0;">
+
+                <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+
+                    <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+
+                        <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                            <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('index')}}">全部图书</a></li></a>
+                            <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('classification')}}">分类</a></li>
+                            <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('sale')}}">特卖</a></li>
+                            <li style="float: left; padding-left: 240px; font-size: 20px; font-weight: 300; color: gray;">
+                                <input id="Text1" type="text" style="display: block;height:25px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;margin-bottom:1px;" placeholder="请输入想搜索的内容..." />
+                            </li>
+                            <li style="float: left; padding-left: 5px; font-size: 20px; font-weight: 300; color: gray;">
+                                <input id="ImageButton1" type="button" value="搜索" style="width: 60px; height: 35px" />
+                            </li>
+                            <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                            <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                            <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                            <a href="#"><label style="font-weight:700;color:black">综合排序</label></a>
+                            <a href="#" style="padding-left:15px"><label style="font-weight:700;color:black" =">人气</label></a>
+                            <a href="#" style="padding-left:15px"><label style="font-weight:700;color:black" =">销量</label></a>
+                            <a href="#" style="padding-left:15px"><label style="font-weight:700;color:black" =">价格</label></a>
+                        </div>
+                    </div>
+                    {%for informations in information%}
+                    <div style="margin-top:5px;">
+                        <div style="float:left;padding-top:5px;">
+                        <ul style="list-style-type:none;">
+                        
+                            <li><img src=alt="" width="240px" height="150px" /></li>
+                            <li>书名：<label style="font-weight:400;color:black"><a href="{{url_for('bookdetails',book_id=informations.id)}}">{{informations.name}}</label></li></a>
+                            <li>价格：<label style="font-weight:400;color:black">{{informations.price}}</label></li>
+                            <li>出版社：<label style="font-weight:400;color:black">{{informations.press}}</label></li>
+                            <li>出版日期：<label style="font-weight:400;color:black">{{informations.date}}</label></li>
+                            
+                    </div>
+                    </ul>
+                        {%endfor%} 
+                       
+                    
+
+                </div>
+            </div>
+        </div></form>
+</body>
+
+</html>
+

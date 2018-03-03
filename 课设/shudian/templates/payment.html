@@ -1,0 +1,124 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>无涯有书</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+        text-decoration:none
+        }
+        img.id:hover{
+            transform: scale(1.6);
+        }
+        id {
+            margin-top:100px;
+        }
+        /*id:hover{
+            transform: scale(1.6);
+         }*/
+    </style>
+    <form id="form1" runat="server">
+         <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:150px">
+                <li style="float:left;list-style:none;width:80px;"><a href="{{url_for('index')}}" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">热销书籍</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">促销活动</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">关于我们</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('regist')}}" style="color:white;text-decoration:none">注册</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="{{url_for('login')}}" style="color:white;text-decoration:none">登录</a></li>
+                <li style="float:right;padding-right:20px;list-style:none">
+                    <img src="images/1.jpg" alt="" style="width:50px; height:50px; border-radius:50%; overflow:hidden;"/>
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 30px; margin-left: 230px;width: 1200px; height: 550px; background-color: white; border: 1px solid #d0d0d0;">
+
+            <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+
+                <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+
+                    <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('index')}}">全部图书</a></li></a>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('classification')}}">分类</a></li>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('sale')}}">特卖</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                        <label style="font-weight:700;color:black">付款界面</label>
+                        <label style="font-weight:400;color:black">扫一扫付款</label>
+                    </div>
+                </div>
+                <div style="margin-top:5px;height:400px;width:1100px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:300px;text-align:center;padding-top:20px;height:300px;border-style:solid;border-color:gainsboro;border-width:1px;">
+                            <img alt="" src="money.jpg" width="250px" height="250px" class="id" style="margin-top:40px"/>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:700px;text-align:left;padding-top:20px;height:300px;margin-left:10px;">
+                            <div >
+                                <div style="margin-top:15px;height:34px;">
+                                    <div style="float:left;width:80px;text-align:right;padding-top:8px;height:27px;">
+                                        <label style="font-weight:700;">收件人:</label>
+                                    </div>
+                                    <div style="float:left; margin-left:5px;width:300px;padding-right: 10px;padding-left: 5px;">
+                                        <input id="Text1" type="text" name="name" style="display: block;height:24px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;" placeholder="收件人" />
+                                    </div>
+                                </div>
+                                <div style="margin-top:15px;height:34px;">
+                                    <div style="float:left;width:80px;text-align:right;padding-top:8px;height:27px;">
+                                        <label style="font-weight:700;">电话:</label>
+                                    </div>
+                                    <div style="float:left; margin-left:5px;width:300px;padding-right: 10px;padding-left: 5px;">
+                                        <input id="Text1" type="text" name="name" style="display: block;height:24px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;" placeholder="电话" />
+                                    </div>
+                                </div>
+                                <div style="margin-top:15px;height:34px;">
+                                    <div style="float:left;width:80px;text-align:right;padding-top:8px;height:27px;">
+                                        <label style="font-weight:700;">收件地址:</label>
+                                    </div>
+                                    <div style="float:left; margin-left:5px;width:300px;padding-right: 10px;padding-left: 5px;">
+                                        <input id="Text1" type="text" name="name" style="display: block;height:24px;padding: 6px 12px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;width:250px;" placeholder="收件地址" />
+                                    </div>
+                                </div>
+                            </div>
+                            <ul style="list-style: none;">
+                                <li style="margin-top:50px;font-size: 15px; font-weight: 300;"><input type="button" value="确认信息"/><input type="button" value="提交"style="margin-left: 20px;" /></li>
+                            </ul>
+
+                        </div>
+
+                </div>
+                  
+                </div>
+            </div>
+            </form>
+</body>
+
+</html>
+

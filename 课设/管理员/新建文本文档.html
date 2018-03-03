@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>  
+<html lang="zh-cn">  
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Test Page</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cent {
+            background: #0CF;
+            height: 200px;
+            width: 100px;
+        }
+
+        .cs {
+            width: 100px;
+            height: 200px;
+            background: #F09;
+            top: 0px;
+            position: absolute;
+            opacity: 0;
+            display: block;
+            font-size: 12px;
+            transition: 0.3s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            margin-left: 200px;
+        }
+
+        .cent:hover .cs {
+            color: #656e73;
+            opacity: 1;
+        }
+    </style>
+    <style type="text/css">
+        .id1 {
+            width: 270px;
+            height: 35px;
+            background-color: teal;
+            display: block;
+        }
+
+        .id2 {
+            width: 270px;
+            height: 70px;
+            background-color: teal;
+            line-height: 35px;
+            display: none;
+        }
+
+        .id3 {
+            width: 270px;
+            height: 70px;
+            background-color: teal;
+            line-height: 35px;
+            display: block;
+        }
+    </style>
+    <script language="javascript">
+
+
+function displayDiv1(){
+
+    var oDiv1=document.getElementById("id1");
+    var oDiv2=document.getElementById("id2");
+    oDiv1.className="id1";
+    oDiv2.className="id2";
+
+}
+function displayDiv2(){
+
+    var oDiv2=document.getElementById("id2");
+    var oDiv1=document.getElementById("id1");
+    //oDiv1.className="id2";
+    oDiv2.className="id3";
+}
+
+    </script>
+</head>
+    
+    <body>
+
+        <div class="cent">
+            This is the cent div
+            <div class="cs" style="">
+                <p>this is a cs div</p>
+            </div>
+        </div>
+
+        <div id="id1" class="id1" onmouseover="displayDiv2()">
+            层一
+        </div>
+        <div id="id2" class="id2" onmouseover="displayDiv2()" onmouseout="displayDiv1()" style="margin-left:200px">
+            层二
+        </div>
+    </body>
+</html> 

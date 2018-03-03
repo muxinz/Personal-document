@@ -1,0 +1,120 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>无涯有书</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+        text-decoration:none
+        }
+        img.id:hover{
+            transform: scale(1.6);
+        }
+        id {
+            margin-top:100px;
+        }
+        /*id:hover{
+            transform: scale(1.6);
+         }*/
+    </style>
+    <form id="form1" runat="server">
+         <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:150px">
+                <li style="float:left;list-style:none;width:80px;"><a href="{{url_for('index')}}" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">热销书籍</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('sale')}}" style="color:white;text-decoration:none">促销活动</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">关于我们</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;width:80px;"><a href="{{url_for('regist')}}" style="color:white;text-decoration:none">注册</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="{{url_for('login')}}" style="color:white;text-decoration:none">登录</a></li>
+                <li style="float:right;padding-right:20px;list-style:none">
+                    <img src="images/1.jpg" alt="" style="width:50px; height:50px; border-radius:50%; overflow:hidden;"/>
+                </li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 30px; margin-left: 230px;width: 1200px; height: 550px; background-color: white; border: 1px solid #d0d0d0;">
+
+            <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+
+                <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+
+                    <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('index')}}">全部图书</a></li></a>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('classification')}}">分类</a></li>
+                        <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;"><a href="{{url_for('sale')}}">特卖</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                        <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                        <label style="font-weight:700;color:black">书本详情</label>
+                        <label style="font-weight:400;color:black">您现在的位置</label>>
+                        <label style="font-weight:400;color:black"><a href="{{url_for('classification')}}">计算机与网络</a></label>>
+                        <label style="font-weight:400;color:black"><a href="{{url_for('Bookdetails')}}">数据库</a></label>
+                    </div>
+                </div>
+                <div style="margin-top:5px;height:400px;width:1100px;border-bottom-style:solid;border-bottom-color:gainsboro;">
+                    <div style="float:left;padding-top:5px;">
+                        <!--左侧内容-->
+                        <div style="float:left;width:300px;text-align:center;padding-top:20px;height:300px;border-style:solid;border-color:gainsboro;border-width:1px;">
+                            <img alt="" src="images/1.jpg" width="150px" height="200px" class="id" style="margin-top:40px"/>
+                        </div>
+                        <!--右侧内容-->
+                        <div style="float:left;width:700px;text-align:left;padding-top:20px;height:300px;margin-left:10px;">
+                            <div style="border-bottom-style:solid;border-bottom-color:gainsboro;height:80px;border-width:1px ">
+                                <ul style="list-style: none;">
+                                    <li style="font-size: 20px; font-weight: 300;">书名：帅逼</li>
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;">作者:<label>木心</label></div></li>
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;margin-left: 10px;">出版社:<label>人民出版社</label></div></li>
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;margin-left: 10px;">ISBN:<label>7911</label></div></li>
+                                    <br />
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;">出版日期:<label>2017/10/17</label></div></li>
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;margin-left: 10px;">页数:<label>498</label></div></li>
+                                    <li><div style="width:150px;float: left;font-size: 15px; font-weight: 300;margin-left: 10px;">定价:<label>49.9</label></div></li>
+                                </ul>
+                            </div>
+                            <div style="border-bottom-style:solid;border-bottom-color:gainsboro;height:80px;border-width:1px ">
+                                <ul style="list-style: none;">
+                                    <li style="font-size: 15px; font-weight: 300;">价格:<label style="color:red">49.9</label> </li>
+                                    <li style="float: left;font-size: 15px; font-weight: 300;">优惠:<label style="color:red">2折</label></li><br />
+                                    <li style="float: left;font-size: 15px; font-weight: 300;">购买数量:<input type="text" placeholder="1"/></li><br />
+                                </ul>
+                            </div>
+                            <ul style="list-style: none;">
+                                <li style="float: left;font-size: 15px; font-weight: 300;">配送地址:<label style="color:dimgray">泰塑公寓</label></li><br />
+                                <li style="margin-top:10px;font-size: 15px; font-weight: 300;"><input type="button" value="加入购物车"/><input type="button" value="直接购买"style="margin-left: 20px;" /></li>
+                            </ul>
+
+                        </div>
+
+                </div>
+                  
+                </div>
+            </div>
+            </form>
+</body>
+
+</html>
+

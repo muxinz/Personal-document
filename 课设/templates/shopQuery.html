@@ -1,0 +1,257 @@
+﻿<html >
+<head style="margin:0px;">
+    <title>无涯管理员界面</title>
+</head>
+<body style="margin:0px;">
+    <style type="text/css">
+        .kuan {
+            width: 500px;
+            height: 38px;
+            float: left;
+        }
+
+        .an {
+            width: 120px;
+            height: 42px;
+            float: right;
+        }
+
+        a:hover {
+            color: red;
+        }
+        a {
+            text-decoration:none
+        }
+    </style>
+    <script type="text/javascript"
+            src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        //checkbox 全选/取消全选
+        var isCheckAll = false;
+        function swapCheck() {
+            if (isCheckAll) {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = false;
+                });
+                isCheckAll = false;
+            } else {
+                $("input[type='checkbox']").each(function() {
+                    this.checked = true;
+                });
+                isCheckAll = true;
+            }
+        }
+    </script>  
+    <form id="form1">
+
+        <div style="background-color:black;height:80px;width:100%">
+
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:100px">
+                <li style="float:left;list-style:none;width:80px;"><a href="index.html" style="color:white;text-decoration:none">首页</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="shopQuery.html" style="color:white;text-decoration:none">商品</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="order.html" style="color:white;text-decoration:none">订单</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">促销</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">统计</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;"><a href="#" style="color:white;text-decoration:none">财务</a></li>
+            </ul>
+        </div>
+        <div style="height:700px;">
+            <!--中间部分-->
+            <div style="float:left;width:13%;height:700px;background-color:lightgray">
+                <br />
+                <ul>
+                    <li style="width:120px;height:50px;text-align:center"><a href="shopQuery.html">商品查询</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="shopshelves.html">商品上架</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="shopQuery.html">商品修改</a></li>
+                    <li style="width:120px;height:50px;text-align:center"><a href="shopQuery.html">商品下架</a></li>
+
+                </ul>
+
+            </div>
+            <!--中间右侧部分-->
+            <div style="float:left;width:85%;/*height:500px;*/">
+                <div style="margin-top:30px; margin-left: 50px;width: 1200px; height: 600px; background-color: white; border: 1px solid #d0d0d0;">
+                    <div style="position: relative; min-height: 1px; float: left; padding-right: 10px; padding-left: 10px;">
+                        <div style="width: 1130px; height: 40px; margin-top: 10px; border-bottom: 2px solid #F0F0F0; border-radius: 2px">
+                            <ul style="padding-left: 0; margin-bottom: 0; list-style: none; position: relative;">
+                                <li style="float: left; padding-left: 10px; font-size: 20px; font-weight: 300; color: gray;">商品查询</li> 
+                                <li style="float: left; padding-left: 240px; font-size: 20px; font-weight: 300; color: gray;">
+                                <input id="Text1" type="text" style="display: block;height:35px;width:350px;font-size:14px;line-height: 1.42857143;color:#555;background-color:#fff;border: 1px solid #ccc;margin-bottom:1px;" placeholder="&nbsp&nbsp&nbsp&nbsp请输入想搜索的内容..." />
+                                </li>
+                                <li style="float: left;font-size: 20px; font-weight: 300; color: gray;">
+                                    <input id="ImageButton1" type="button" value="搜索" style="width: 60px; height: 35px" />
+                                </li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>关闭</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>设置</a></li>
+                                <li style="float: right; padding-top: 5px; padding-right: 10px"><a>收缩</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div style="margin-left:10px;padding-top:8px;height:27px;margin-bottom:1px">
+                                <label style="font-weight:700;color:black">查询列表</label>
+                            </div>
+                        </div>
+                        <!--查询列表显示-->
+                        <div style="display: block; margin-top: 20px; margin-left: 40px; width: 1100px; height: 400px;">
+                            <table style="border-spacing: 0; border-collapse: collapse; width: 100%;">
+                                <thead style="display: table-header-group; vertical-align: middle; border-color: inherit; border-top-color: inherit; border-right-color: inherit; border-bottom-color: inherit; border-left-color: inherit; height: 35px;">
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit;">
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 11%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            选择
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            商品名
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            优惠
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 21%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            数量
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 13%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            价格
+                                        </th>
+                                        <th style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 15%; text-align: left; width: 20%; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            编辑
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody style="display: table-header-group; vertical-align: middle; border-color: inherit;">
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 11%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <input id="Checkbox1" type="checkbox" style="width: 20px; height: 20px;" />
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>线性代数</a><br />
+                                            <small>上传时间：2017/10/28</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>八折</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 21%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <div style="height: 20px!important; margin-bottom: 3px!important; margin-top: 10px;">
+                                                <div style="background: #1ABB9C!important; border: 5px solid #1ABB9C!important; color: #fff;">
+                                                </div>
+                                            </div>
+                                            <small>第一：卖出100件</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 13%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            39.0¥
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 15%; text-align: left; width: 20%; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">删除</a>
+                                            <a href="商品参数.aspx" style="background-color: black; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 6%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <input id="Checkbox2" type="checkbox" style="width: 20px; height: 20px;" />
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>高等数学</a><br />
+                                            <small>上传时间：2017/10/29</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>八折</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 21%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <div style="height: 20px!important; margin-bottom: 3px!important; margin-top: 10px;">
+                                                <div style="background: #1ABB9C!important; border: 5px solid #1ABB9C!important; color: #fff;">
+                                                </div>
+                                            </div>
+                                            <small>第二：卖出90件</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 13%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            39.0¥
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; width: 20%; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">删除</a>
+                                            <a href="商品参数.aspx" style="background-color: black; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 11%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <input id="Checkbox3" type="checkbox" style="width: 20px; height: 20px;" />
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>大学英语</a><br />
+                                            <small>上传时间：2017/10/30</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>无折扣</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 21%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <div style="height: 20px!important; margin-bottom: 3px!important; margin-top: 10px;">
+                                                <div style="background: #1ABB9C!important; border: 5px solid #1ABB9C!important; color: #fff;">
+                                                </div>
+                                            </div>
+                                            <small>第三：卖出80件</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 13%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            49.0¥
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 15%; text-align: left; width: 20%; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">删除</a>
+                                            <a href="商品参数.aspx" style="background-color: black; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 11%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <input id="Checkbox4" type="checkbox" style="width: 20px; height: 20px;" />
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>行为艺术</a><br />
+                                            <small>上传时间：2017/10/31</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 20%; text-align: left; font-size: 12px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a>无折扣</a>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 21%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <div style="height: 20px!important; margin-bottom: 3px!important; margin-top: 10px;">
+                                                <div style="background: #1ABB9C!important; border: 5px solid #1ABB9C!important; color: #fff;">
+                                                </div>
+                                            </div>
+                                            <small>第三：卖出80件</small>
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 13%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            59.0¥
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 15%; text-align: left; width: 20%; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">删除</a>
+                                            <a href="商品参数.aspx" style="background-color: black; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="display: table-row; vertical-align: inherit; border-color: inherit; height: 50px;">
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 11%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <input id="Checkbox5" type="checkbox" onclick="swapCheck()" style="width: 20px; height: 20px;" />全选
+                                        </td>
+                                        <td colspan="4" style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 6%; text-align: center; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <b style="color: black">1</b>&nbsp 2&nbsp 3&nbsp 首页 &nbsp 上一页 &nbsp 下一页
+                                        </td>
+                                        <td style="vertical-align: bottom; border-bottom: 2px solid #ddd; width: 6%; text-align: left; font-size: 15px; font-weight: 600; color: gray; padding-bottom: 7px;">
+                                            <a href="#" style="background-color: blue; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">批量删除</a>
+                                            <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px; color: #fff; padding: 1px 5px; font-size: 12px; line-height: 1.5;">批量下架</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div style="margin-top:15px;">
+                                <a href="#" style="background-color: red; border-radius: 3px; margin-bottom: 5px;color: #fff; padding: 1px 5px; font-size: 20px; line-height: 1.5;">添加商品</a>
+                                <!--<a style="float:right;padding-right:80px;">总计：<Label ID="Label1" Text="Label">186¥</Label></a>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="float:left;width:100%;height:100px;background-color:greenyellow;margin:0px;">
+
+        </div>
+    </form>
+</body>
+</html>

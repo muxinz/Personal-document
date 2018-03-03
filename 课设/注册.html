@@ -1,0 +1,30 @@
+<html >
+<head >
+    
+    <title>注册</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class='form-container' align="middle">
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">用户名</label>
+                <input id="Text1" type="text" class="form-control" placeholder="请输入您的用户名" style="width:500px"/>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码</label>
+                <input id="mima" type="password" class="form-control" placeholder="请输入您的密码" style="width:500px" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">确认密码</label>
+                <asp:TextBox ID="twicemima" runat="server" TextMode="Password"></asp:TextBox>
+                <input id="twicemima" type="password" class="form-control" placeholder="请再次输入您的密码" style="width:500px"  />
+            </div>
+            <input id="Button1" type="button" value="确认注册" class="btn btn-default"/>
+    </form>
+</body>
+</html>
