@@ -1,0 +1,194 @@
+货站号：OtherError
+错误产生时间：2017-09-10 20:29:09
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.FormatException
+当前异常信息：将参数值从 String 转换到 Int32 失败。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：System.Object CoerceValue(System.Object, System.Data.SqlClient.MetaType, Boolean ByRef, Boolean ByRef, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 88
+调用者自己传过来的错误信息：stu_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-09-10 20:32:38
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.FormatException
+当前异常信息：将参数值从 String 转换到 Int32 失败。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：System.Object CoerceValue(System.Object, System.Data.SqlClient.MetaType, Boolean ByRef, Boolean ByRef, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 88
+调用者自己传过来的错误信息：stu_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-09-10 20:52:40
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：找不到存储过程 'course_select'。
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 54
+调用者自己传过来的错误信息：course_select
+Source: .Net SqlClient Data Provider
+Number: 2812
+State: 62
+Class: 16
+Server: (local)
+Message: 找不到存储过程 'course_select'。
+Procedure: 
+LineNumber: 1
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-09-10 23:14:23
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 54
+调用者自己传过来的错误信息：stuhomepage_aselect
+Source: .Net SqlClient Data Provider
+Number: 201
+State: 4
+Class: 16
+Server: (local)
+Message: 过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+Procedure: stuhomepage_aselect
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-09-10 23:15:46
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 54
+调用者自己传过来的错误信息：stuhomepage_aselect
+Source: .Net SqlClient Data Provider
+Number: 201
+State: 4
+Class: 16
+Server: (local)
+Message: 过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+Procedure: stuhomepage_aselect
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-09-10 23:16:33
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 D:\learn\洪荒之力\东西\simjxtop -xyj (2)7.28\ShDataDLL\DbHelperSQL.cs:行号 54
+调用者自己传过来的错误信息：stuhomepage_aselect
+Source: .Net SqlClient Data Provider
+Number: 201
+State: 4
+Class: 16
+Server: (local)
+Message: 过程或函数 'stuhomepage_aselect' 需要参数 '@username'，但未提供该参数。
+Procedure: stuhomepage_aselect
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 

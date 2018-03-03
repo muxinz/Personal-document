@@ -1,0 +1,204 @@
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:09
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: 53
+State: 0
+Class: 20
+Server: 
+Message: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:09
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: 53
+State: 0
+Class: 20
+Server: 
+Message: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:09
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: 53
+State: 0
+Class: 20
+Server: 
+Message: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:53
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: -2
+State: 0
+Class: 11
+Server: LD-20170411IBSB
+Message: 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:53
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: -2
+State: 0
+Class: 11
+Server: LD-20170411IBSB
+Message: 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 12:00:53
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: -2
+State: 0
+Class: 11
+Server: LD-20170411IBSB
+Message: 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=7924；handshake=8738；
+Procedure: 
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-24 15:37:10
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.InvalidOperationException
+当前异常信息：超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：Boolean TryGetConnection(System.Data.Common.DbConnection, System.Threading.Tasks.TaskCompletionSource`1[System.Data.ProviderBase.DbConnectionInternal], System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal, System.Data.ProviderBase.DbConnectionInternal ByRef)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 73
+调用者自己传过来的错误信息：stu_select
+
+ 
+###################################################################################
+ 
+ 

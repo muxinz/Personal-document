@@ -1,0 +1,9 @@
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\bin\Debug\WindowsFormsApplication24.exe.config
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\bin\Debug\WindowsFormsApplication24.exe
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\bin\Debug\WindowsFormsApplication24.pdb
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.csprojResolveAssemblyReference.cache
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Form1.resources
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.Properties.Resources.resources
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.csproj.GenerateResource.Cache
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.exe
+c:\users\myhbw\documents\visual studio 2015\Projects\WindowsFormsApplication24\WindowsFormsApplication24\obj\Debug\WindowsFormsApplication24.pdb

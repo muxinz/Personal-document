@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="1" WIDTH="100%" BORDER="1">
+            <tr><td colspan="2">HEADER</td></tr>
+            <tr>
+                <td WIDTH="100PX" >LEFT</td>
+                <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            <tr><td colspan="2">FOOTER</td></tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

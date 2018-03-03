@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="stu.master.cs" Inherits="stu_stu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>学生空间</title>
+
+    <link rel="stylesheet" href="Content/moco.min.css" type="text/css"/>
+    <link rel="stylesheet" href="Content/StyleSheet.css" type="text/css"/>
+      <style>
+          a:hover { color:red;}
+    </style>
+</head>
+<body>
+     <form id="form1" runat="server">
+          <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+<div id="header">
+    <div class="page-container" id="nav" style="z-index: 1000;">
+            <div id="logo" class="logo">
+                <a href="#" target="_self" class="hide-text" title="首页"></a>
+            </div>
+            <button type="button" class="navbar-toggle visible-xs-block js-show-menu">
+
+            </button>
+            <ul class="nav-item">
+                <li class="set-btn visible-xs-block">
+                   <%-- <a href="/user/newlogin" target="_self">登11111111录</a> --%>
+                    <%--<a href="/user/newsignup" target="_self">注册</a>--%>
+                </li>
+                <li>
+                    <a href="#" target="_self">课程</a>
+                </li>
+                <li><a href="#" class="program-nav " target="_self">课程中心</a>
+                </li>
+                <li>
+                    <a href="#" target="_self">学问</a>
+                </li>
+                <li><a href="#" target="_self">关于我们</a></li>
+                <li><a href="#" target="_self">网站留言</a></li>
+            </ul>
+            <div id="login-area" style="width:227px;height:60px;">
+                <ul class="header-unlogin ">
+                    <li class="shop-cart" id="shop-cart" style="width:107px;height:60px">
+                        <a href="#" class="shop-cart-icon" target="_blank">
+                            <span class="icon-shopping-cart "></span>
+                            <span class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0" style="display: none">0</span>
+                            <span>购物车</span>
+                        </a>
+                    </li>
+                    <li class="header-signin" style="width:60px;height:60px;">
+                        <%--<a href="#" id="js-signin-btn">登录</a>--%>
+                        <img class="img" src="images/5858eaac0001f6f201000100-200-200.jpg" alt="" style="height:45px;"/>
+                    </li>
+                    <li class="header-signup" style="width:60px;height:60px;">
+                        <a href="login.aspx"  style ="color:white">退出</a><%--<asp:Button ID="back" runat="server" Text="退出" />--%>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-warp clearfix" style="min-width: 32px; height: 60px;">
+                <div class="pa searchTags">
+                    <a href="#" target="_blank">学生入口</a>
+                    <a href="#" target="_blank">老师问题</a>
+                </div>
+                <div class="search-area" data-search="top-banner">
+                    <input class="search-input" data-suggest-trigger="suggest-trigger" type="text" autocomplete="off" />
+                    <input type="hidden" class="btn_search" data-search-btn="search-btn" />
+                    <ul class="search-area-result" data-suggest-result="suggest-result" >
+                  </ul>
+                </div>
+                <div class="showhide-search" data-show="no" style="right: 0; top: 0; width: 30px; left: 220px">
+                   <i class="icon-search" style="width:30px;height:60px"> </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position:relative; height: 1000px;background-color:white;">
+        <%--上界面--%>
+             <div class="bg-other user-head-info" style ="background-image:url(images/backimg.JPG)">
+                 <div class ="user-info">
+                     <div class="user-pic">
+                         <%--<div class="user-pic-bg">头像</div>--%>
+                            <img class="img" src="images/5858eaac0001f6f201000100-200-200.jpg" alt=""/>
+                         
+                     <div style="position: relative;left:210px;top:-200px">
+                         <h3 class="user-name"> <span><asp:Label ID="stuname" runat="server" Text="Label">未知</asp:Label></span> </h3>
+                     <p class ="about-info">学习时常：2小时</p>
+                     <p class ="user-desc">好好学习！天天向上！~</p>
+                         </div>
+                     
+                     <div class="study-info" style="display:none;">
+                                <div class="item">
+                                     <%--<a href="#"><em>1</em></a>          
+                                     <span>关注</span>--%>
+                                 </div>
+                                 <div class="item follows">
+                                 <%--<a href="#"><em>5</em></a>
+                                 <span>粉丝</span>--%>
+                    </div>
+                        
+        </div>
+          <div >
+              <style type="text/css">
+        .nav {
+            width: 160px;
+            /*position: fixed;*/
+            position:absolute;
+            /*top: 40px;*/
+            top: 110px;
+            z-index: 1999;
+            background-color:#f0f0f0;
+            border: 1px solid #ccc;
+            margin: 20% 0 0 10px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .nav li {
+            height: 50px;
+            line-height: 60px;
+            border-bottom: 1px solid #d3d3d3;
+            text-align: center;
+            cursor: pointer;
+        }
+        </style>
+        <ul class="nav">
+        <li><a class="bb" href="homepage_new.aspx">主页</a></li>
+        <li><a class="bb" href="index.aspx">课程</a></li>
+        <li><a class="bb" href="order.aspx">订单</a></li>
+        <li><a class="bb" href="spread.aspx">推广</a></li>
+        <li><a class="bb" href="set.aspx">设置</a></li> </ul>
+              <%--<div style="position:absolute; top: 249px; left: -70px; width: 854px;">--%>
+               <%--<div class="aa"><div class="bb"><a href="homepage.aspx">主页</a></div></div>
+               <div class="aa"><div class="bb"><a href="index.aspx">课程</a></div></div>--%>
+               <%--<div class="aa"><div class="bb"><a href="forum.aspx">论坛</a></div></div>--%>
+               <%--<div class="aa"><div class="bb"><a href="order.aspx">订单</a></div></div>
+               <div class="aa"><div class="bb"><a href="spread.aspx">推广</a></div></div> 
+               <div class="aa"><div class="bb"><a href="set.aspx">设置</a></div></div> --%>
+               <%-- <div><div style="position:relative;margin-top:-330px;margin-left:270px">-----------------------------------------------------------------</div></div>--%>
+             </div>
+                 </div>
+
+             </div>
+        </div>
+
+         <div style="position:relative;top:40px;left:520px; width: 850px; height:600px;/*overflow-y:auto;overflow-x:hidden;*/">
+               
+          
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</div>
+
+ <div>
+    <div class="footer-link">
+        <!-- <a href="/about/us" target="_blank" title="关于我们">关于我们</a> -->
+        <a href="#" target="_blank" title="企业合作"style="color:white">企业合作</a>
+        <a href="#" target="_blank" title="人才招聘"style="color:white">人才招聘</a>
+        <a href="#" target="_blank" title="联系我们"style="color:white">联系我们</a>
+        <a href="#" target="_blank" title="常见问题"style="color:white">常见问题</a>
+        <a href="#" target="_blank" title="意见反馈"style="color:white">意见反馈</a>
+        <a href="#" target="_blank"></a>
+        <a href="#" target="_blank" title="友情链接"style="color:white">友情链接</a>
+    </div>
+    <div class="footer-copyright">
+        <p>?&nbsp;2017&nbsp;爱德克斯情景仿真系统</p>
+    </div>
+   </div>
+   </form>
+</body>
+</html>

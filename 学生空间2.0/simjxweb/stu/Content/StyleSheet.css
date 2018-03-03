@@ -1,0 +1,308 @@
+﻿
+#main {
+min-height:750px;
+display:block;
+padding:20px 0 70px;
+}
+#header {
+    background-color:black;
+}
+#footer .waper {
+    width: auto;
+    max-width: 1200px;
+}
+#footer .footer_intro {
+    padding-left: 40px;
+}
+#footer .footer_link {
+    margin-bottom: 4px;
+    line-height: 1.8;
+}
+.footer_link ul {
+    overflow: hidden;
+    margin-top: -1px;
+}
+#footer .footer_link li {
+    margin-right: 30px;
+    text-align: center;
+    float: left;
+}
+.footer_link a:active, .footer_link a:link, .footer_link a:visited {
+    color: #c8cdd2;
+}
+.nav-item a {
+    position: relative;
+    padding: 0 25px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    transition: background-color .3s;
+}
+ .slider {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: -190px; 
+    background-color:white;
+}
+ .user-pic {
+    position: relative;
+    left:-100px;
+    top:-25px;
+}
+ .slider .user-pic .mail i {
+    font-size: 20px;
+}
+ .slider ul a i {
+    left: -25px;
+}
+ .slider ul a b {
+    right: -45px;
+}
+ .slider ul li {
+    height: 60px;
+    border-bottom: 1px solid #EDF1F2;
+    width: 160px;
+    margin: 0 auto;
+}
+ .bb {
+    font-size:15px;
+    line-height:45px
+ }
+.aa {
+    background-color:lightblue;
+     width:160px;
+     margin-left:90px;
+     height:60px
+ }
+.one{
+    font-size: 14px;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 10px;
+    border-bottom: 1px solid #d0d6d9;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(208, 214, 217);
+
+} 
+.sort-item{
+   color: #f01400;
+   border-bottom: 2px solid #f01400;
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-bottom-color: rgb(240, 20, 0);
+                }
+ .slider ul a {
+    display: block;
+    height: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    color: #787d82;
+}
+.slider ul a b, .slider ul a i {
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+}
+ol, ul {
+    list-style: none;
+}
+.hy {
+    font-family: icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /*-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+.c-tab {
+    font-size: 14px;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 10px;
+    border-bottom: 1px solid #d0d6d9;
+}
+.c-tab, .share-box .courses-r .del:hover {
+    color: #787d82;
+}
+.c-tab .tool-left .active, .c-tab .tool-left .sort-item:hover {
+    color: #f01400;
+    border-bottom: 2px solid #f01400;
+}
+.c-tab .sort-item {
+    margin-right: 53px;
+    display: inline-block;
+    color: #787d82;
+}
+
+.c-tab .tool-all {
+    position: relative;
+    margin-right: 10px;
+}
+
+.c-tab .tool-item {
+    cursor: pointer;
+}
+
+.c-tab .icon {
+    margin-left: 15px;
+    vertical-align: -1px;
+}
+
+
+.clearfix {
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.icon-home:before {
+content:"\e601";
+
+}
+user-pic {
+    position: relative;
+    float:left;
+}
+user-pic .user-pic-bg {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    opacity: .2;
+    border-radius: 100px;
+    transition: all .3s;
+}
+ .slider .user-pic .friend {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    cursor: pointer;
+}
+ /*.user-head-info .user-info {
+    position: relative;
+    width: 712px;
+    padding-left: 241px;
+    padding-right: 247px;
+    padding-top: 60px;
+    margin: 0 auto;
+    top: 9px;
+    left: 5px;
+}*/
+ .user-info {
+    position: relative;
+    width: 712px;
+    padding-left: 241px;
+    padding-right: 247px;
+    padding-top: 60px;
+    margin: 0 auto;
+    top: 9px;
+    left: 5px;
+}
+ .user-head-info .user-info .user-name {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: #fff;
+}
+ .user-head-info .user-info .about-info {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 6px;
+}
+ .user-head-info .user-info .user-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    text-align: left;
+    margin-top: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    opacity: .5;
+}
+ .study-info .follows {
+    
+    font-weight:700;
+    color:white;
+}
+.item {
+    height: 48px;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight:700;
+    color:white;
+}
+.em {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+ .study-info {
+    position: absolute;
+    top: 115px;
+    right: 10px;
+    min-width: 200px;
+    text-align: right;
+    font-weight:700;
+    color:white;
+}
+ .u-container {
+    margin-left: 240px;
+    min-height: 589px;
+    /*background-color:chartreuse;*/
+}
+ .wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+ .c-tab {
+    font-size: 14px;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 10px;
+    border-bottom: 1px solid #d0d6d9;
+}
+ .c-tab, .share-box .courses-r .del:hover {
+    color: #787d82;
+}
+
+.div {
+    display: block;
+}
+.img {
+    border: 0;
+}
+.bg-other {
+    height: 220px;
+    background: url(/static/img/u/temp1.jpg) center top no-repeat #000;
+    background-size: cover;
+}

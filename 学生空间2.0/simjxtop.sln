@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simjxtop", "simjxtop\simjxtop.csproj", "{B64D4BF4-A3A8-425D-9075-F3FC3101FD9C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "simjxweb", "simjxweb\", "{EBCD4C45-472D-4FD3-B5CA-A7D85FBC074C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{41787ca8-e449-40b4-bceb-9862e389289c}|ShDataDLL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60967"
+		Debug.AspNetCompiler.PhysicalPath = "simjxweb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60967\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60967"
+		Release.AspNetCompiler.PhysicalPath = "simjxweb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60967\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60967"
+		SlnRelativePath = "simjxweb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShDataDLL", "ShDataDLL\ShDataDLL.csproj", "{41787CA8-E449-40B4-BCEB-9862E389289C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64D4BF4-A3A8-425D-9075-F3FC3101FD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64D4BF4-A3A8-425D-9075-F3FC3101FD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64D4BF4-A3A8-425D-9075-F3FC3101FD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64D4BF4-A3A8-425D-9075-F3FC3101FD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCD4C45-472D-4FD3-B5CA-A7D85FBC074C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCD4C45-472D-4FD3-B5CA-A7D85FBC074C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCD4C45-472D-4FD3-B5CA-A7D85FBC074C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCD4C45-472D-4FD3-B5CA-A7D85FBC074C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{41787CA8-E449-40B4-BCEB-9862E389289C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41787CA8-E449-40B4-BCEB-9862E389289C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41787CA8-E449-40B4-BCEB-9862E389289C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41787CA8-E449-40B4-BCEB-9862E389289C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

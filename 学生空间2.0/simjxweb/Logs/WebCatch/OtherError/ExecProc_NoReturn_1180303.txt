@@ -1,0 +1,30 @@
+货站号：OtherError
+错误产生时间：2018-03-03 17:07:51
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.Data.SqlClient.SqlException
+当前异常信息：过程或函数 'stu_select' 需要参数 '@userid'，但未提供该参数。
+导致错误的应用程序或对象名：.Net SqlClient Data Provider
+引发当前异常的方法：Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\学生空间2.0\ShDataDLL\DbHelperSQL.cs:行号 88
+调用者自己传过来的错误信息：stu_select
+Source: .Net SqlClient Data Provider
+Number: 201
+State: 4
+Class: 16
+Server: (local)
+Message: 过程或函数 'stu_select' 需要参数 '@userid'，但未提供该参数。
+Procedure: stu_select
+LineNumber: 0
+ 
+###################################################################################
+ 
+ 

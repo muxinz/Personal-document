@@ -1,0 +1,10 @@
+G:\Vs2015\simjxtop\simjxtop\bin\Debug\simjxtop.exe.config
+E:\simjxtop\simjxtop\bin\Debug\simjxtop.exe.config
+E:\simjxtop - 副本 (2)\simjxtop\bin\Debug\simjxtop.exe.config
+E:\simjxtop - 副本 (2)\simjxtop\bin\Debug\simjxtop.exe
+E:\simjxtop - 副本 (2)\simjxtop\bin\Debug\simjxtop.pdb
+E:\simjxtop - 副本 (2)\simjxtop\obj\Debug\simjxtop.csprojResolveAssemblyReference.cache
+E:\simjxtop - 副本 (2)\simjxtop\obj\Debug\simjxtop.Properties.Resources.resources
+E:\simjxtop - 副本 (2)\simjxtop\obj\Debug\simjxtop.csproj.GenerateResource.Cache
+E:\simjxtop - 副本 (2)\simjxtop\obj\Debug\simjxtop.exe
+E:\simjxtop - 副本 (2)\simjxtop\obj\Debug\simjxtop.pdb

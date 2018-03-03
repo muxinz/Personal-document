@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LX.master.cs" Inherits="stu_LX" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+     
+    </asp:ContentPlaceHolder>
+    <style>
+        .bb {
+        text-align:center;
+        font-size:20px;
+        line-height:45px;
+        color:gray;
+        background-color:white
+        }
+        .aa {
+            background-color:white;
+            width: 170px;
+            margin-left: 110px;
+            height: 55px;    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:#eeeeee;
+        }
+        a:hover {
+        color:red
+        }
+
+    </style>
+</head>
+<body style="margin:0px;padding :0px;overflow:scroll;overflow-x:hidden">
+    <form id="form1" runat="server">
+       
+        <div style="background-color:black;height:80px;width:100%">
+           
+            <ul style="display:block;position:relative; display:block;text-align:center;font-size:16px;line-height:60px;padding:20px 20px;margin-left:250px">
+           <li style="float:left;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">首页</a></li>
+           <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">课程</a></li>
+                <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#"  style="color:white;text-decoration:none">杯赛竞赛</a></li>
+                <li style="float:left;padding-left:10px;list-style:none;width:80px;"><a href="#" style="color:white;text-decoration:none">学问</a></li>
+                 <li style="float:left;padding-left:20px;list-style:none;width:80px;"><a href="#"style="color:white;text-decoration:none">关于我们</a></li>
+                <li style="float:right;padding-left:20px;list-style:none;"><a href="login.aspx"style="color:white;text-decoration:none">退出</a></li>
+                 <li style="float:right;padding-right:20px;list-style:none">
+                     <asp:Image ID="Image1" runat="server" style="width:50px; height:50px; border-radius:50%; overflow:hidden;"/></li>               
+            </ul>          
+        </div>
+        <div style=" height:220px;width:auto;background-image:url(images/backimg.JPG);background-size:cover">
+            <asp:Image ID="Imgpath" runat="server" style="width:200px; height:200px; border-radius:50%; overflow:hidden;margin-left:240px;padding-top:10px"/>
+            <div style="position: relative;left:480px;top:-120px">
+              <span style="font-size: 32px;font-weight: 600;color: #fff;"><asp:Label ID="username" runat="server" Text="">姓名</asp:Label> </span>
+                <p style="color: #fff;font-size: 14px;">好好学习！天天向上！~</p>
+             </div> 
+            <div style="position:absolute; top: 360px; left: 150px; width: 300px;">
+               <div class="aa"><div class="bb"><a href="homepage_new.aspx" style="color:gray;text-decoration:none">主页</a></div></div>
+               <div class="aa"><div class="bb"><a href="index.aspx" style="color:gray;text-decoration:none">课程</a></div></div>            
+               <div class="aa"><div class="bb"><a href="order.aspx" style="color:gray;text-decoration:none">订单</a></div></div>
+               <div class="aa"><div class="bb"><a href="spread.aspx" style="color:gray;text-decoration:none">推广</a></div></div> 
+               <div class="aa"><div class="bb"><a href="set.aspx" style="color:gray;text-decoration:none">设置</a></div></div> 
+          <%-- <div class="aa"><div class="bb"><a href="blank.aspx" style="color:gray;text-decoration:none">blank</a></div></div> --%>
+             </div>
+        </div>
+        <div style="position:relative;top:30px; left:450px; width: 850px;">
+     
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+            </div>
+     <div style="margin-top:150px;">
+    <div style="text-align:center;
+border-bottom:1px solid #d0d6d9;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #d0d6d9;
+margin:0 auto;
+padding:25px 0;
+background-color:black;">
+        <a href="#" target="_blank" title="企业合作"style="color:white;text-decoration:none;margin-left:15px;">企业合作</a>
+        <a href="#" target="_blank" title="人才招聘"style="color:white;text-decoration:none;margin-left:15px;">人才招聘</a>
+        <a href="#" target="_blank" title="联系我们"style="color:white;text-decoration:none;margin-left:15px;">联系我们</a>
+        <a href="#" target="_blank" title="常见问题"style="color:white;text-decoration:none;margin-left:15px;">常见问题</a>
+        <a href="#" target="_blank" title="意见反馈"style="color:white;text-decoration:none;margin-left:15px;">意见反馈</a>
+        <a href="#" target="_blank" title="友情链接"style="color:white;text-decoration:none;margin-left:15px;">友情链接</a>
+    </div>
+    <div style="background-color:black;text-align:center;">
+        <p style="color:white ">&nbsp;2017&nbsp;爱德克斯情景仿真系统</p>
+    </div>
+             </div>
+       
+          
+    </form>
+    
+</body>
+</html>
+

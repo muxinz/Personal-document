@@ -1,0 +1,46 @@
+货站号：OtherError
+错误产生时间：2017-07-16 14:55:04
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.FormatException
+当前异常信息：将参数值从 String 转换到 Int32 失败。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：System.Object CoerceValue(System.Object, System.Data.SqlClient.MetaType, Boolean ByRef, Boolean ByRef, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 42
+调用者自己传过来的错误信息：stu_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-16 15:01:32
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.FormatException
+当前异常信息：将参数值从 String 转换到 Int32 失败。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：System.Object CoerceValue(System.Object, System.Data.SqlClient.MetaType, Boolean ByRef, Boolean ByRef, Boolean)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   在 System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 ShDataDLL.DbHelperSQL.ExecProc_NoReturn(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 42
+调用者自己传过来的错误信息：stu_select
+
+ 
+###################################################################################
+ 
+ 

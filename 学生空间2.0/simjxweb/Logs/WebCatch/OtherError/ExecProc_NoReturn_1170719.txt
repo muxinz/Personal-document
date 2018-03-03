@@ -1,0 +1,68 @@
+货站号：OtherError
+错误产生时间：2017-07-19 16:59:17
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.ArgumentException
+当前异常信息：另一个 SqlParameterCollection 中已包含 SqlParameter。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：Void Validate(Int32, System.Object)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(SqlParameter value)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 48
+调用者自己传过来的错误信息：shop_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-19 17:01:52
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.ArgumentException
+当前异常信息：另一个 SqlParameterCollection 中已包含 SqlParameter。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：Void Validate(Int32, System.Object)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(SqlParameter value)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 48
+调用者自己传过来的错误信息：shop_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-19 17:17:35
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.ArgumentException
+当前异常信息：另一个 SqlParameterCollection 中已包含 SqlParameter。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：Void Validate(Int32, System.Object)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(SqlParameter value)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 48
+调用者自己传过来的错误信息：shop_select
+
+ 
+###################################################################################
+ 
+ 
+货站号：OtherError
+错误产生时间：2017-07-19 17:28:03
+接受错误信息并进行错误处理的页面为：ExecProc_NoReturn_1 
+当前实例的运行时类型：System.ArgumentException
+当前异常信息：另一个 SqlParameterCollection 中已包含 SqlParameter。
+导致错误的应用程序或对象名：System.Data
+引发当前异常的方法：Void Validate(Int32, System.Object)
+当前异常发生时调用堆栈上的帧的字符串表现形式：   在 System.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(SqlParameter value)
+   在 ShDataDLL.DbHelperSQL.ExecProc_Return(String storedProcName, IDataParameter[] parameters) 位置 C:\Users\Administrator\Desktop\simjxtop -xyj (2)\ShDataDLL\DbHelperSQL.cs:行号 48
+调用者自己传过来的错误信息：shop_select
+
+ 
+###################################################################################
+ 
+ 
