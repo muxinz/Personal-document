@@ -1,4 +1,4 @@
-# Personal-document
+﻿# Personal-document
 项目+课设+竞品分析+Axure文件
 
 项目主题：面向K12仿真教育网站
@@ -6,7 +6,7 @@
 代码 + Xmind文件
 
 竞品分析：
-游戏直播平台分析 + TapTap客户端分析 + 我要模考网分析
+游戏直播平台分析 + TapTap客户端分析 + 视频评论对比分析 + 我要模考网分析
 工具：word、ppt、excel
 数据来源：百度指数、艾瑞指数、各大官网
 
