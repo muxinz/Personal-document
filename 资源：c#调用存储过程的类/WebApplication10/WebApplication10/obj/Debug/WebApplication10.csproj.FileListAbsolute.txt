@@ -1,0 +1,72 @@
+G:\Vs2015\WebApplication10\WebApplication10\bin\ApplicationInsights.config
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\csc.exe
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\System.Collections.Immutable.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\System.Reflection.Metadata.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\vbc.exe
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\VBCSCompiler.exe
+G:\Vs2015\WebApplication10\WebApplication10\bin\roslyn\VBCSCompiler.exe.config
+G:\Vs2015\WebApplication10\WebApplication10\bin\WebApplication10.dll.config
+G:\Vs2015\WebApplication10\WebApplication10\bin\WebApplication10.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\WebApplication10.pdb
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.DependencyCollector.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.Web.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.WindowsServer.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.ApplicationInsights.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\ShDataDLL.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\ShErrorDeal.dll
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.DependencyCollector.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.Web.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.AI.WindowsServer.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.ApplicationInsights.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Vs2015\WebApplication10\WebApplication10\bin\ShDataDLL.pdb
+G:\Vs2015\WebApplication10\WebApplication10\obj\Debug\WebApplication10.csprojResolveAssemblyReference.cache
+G:\Vs2015\WebApplication10\WebApplication10\obj\Debug\WebApplication10.dll
+G:\Vs2015\WebApplication10\WebApplication10\obj\Debug\WebApplication10.pdb
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\ApplicationInsights.config
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\csc.exe
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\System.Collections.Immutable.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\System.Reflection.Metadata.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\vbc.exe
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\VBCSCompiler.exe
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\roslyn\VBCSCompiler.exe.config
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\WebApplication10.dll.config
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\WebApplication10.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\WebApplication10.pdb
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.Agent.Intercept.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.DependencyCollector.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.Web.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.WindowsServer.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.ApplicationInsights.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\ShDataDLL.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\ShErrorDeal.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.DependencyCollector.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.Web.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.AI.WindowsServer.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.ApplicationInsights.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\bin\ShDataDLL.pdb
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\obj\Debug\WebApplication10.csprojResolveAssemblyReference.cache
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\obj\Debug\WebApplication10.dll
+E:\附加 learn\c#调用存储过程的增删改\WebApplication10\WebApplication10\obj\Debug\WebApplication10.pdb
