@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SystemParameter[
+  <!ELEMENT SystemParameter (LocationInformation,DownInformation,DBVer,ServerInfo)>
+  <!ELEMENT LocationInformation (Comid,Whid,Branchid,MainIniVersion,CusIniVersion,OthIniVersion,Cardid,CarSty,showDh,showDh_pdy,StickerSty,WaybillStyle,Freight_Yes,X_location,Y_location,Print_nameW,Print_nameL,Print_nameZ,Print_papernameW,Print_papernameL,Print_papernameZ,fileUpDownUrl,DeleteInterval,TimeInterval)>
+  <!ELEMENT DBVer (Config,ShSms,PadBusiness)>
+  <!ATTLIST DBVer Ver NMTOKEN #REQUIRED>
+  <!ELEMENT ServerInfo (ServerPhone,ServerMobile,ServerQQ)>
+  <!ELEMENT Comid (#PCDATA)>
+  <!ELEMENT Whid (#PCDATA)>
+  <!ELEMENT Branchid (#PCDATA)>
+  <!ELEMENT MainIniVersion (#PCDATA)>
+  <!ELEMENT CusIniVersion (#PCDATA)>
+  <!ELEMENT OthIniVersion (#PCDATA)>
+  <!ELEMENT Cardid (#PCDATA)>
+  <!ELEMENT CarSty (#PCDATA)>
+  <!ELEMENT showDh (#PCDATA)>
+  <!ELEMENT showDh_pdy (#PCDATA)>
+  <!ELEMENT StickerSty (#PCDATA)>
+  <!ELEMENT WaybillStyle (#PCDATA)>
+  <!ELEMENT Freight_Yes (#PCDATA)>
+  <!ELEMENT X_location (#PCDATA)>
+  <!ELEMENT Y_location (#PCDATA)>
+  <!ELEMENT Print_nameW (#PCDATA)>
+  <!ELEMENT Print_nameL (#PCDATA)>
+  <!ELEMENT Print_nameZ (#PCDATA)>
+  <!ELEMENT Print_papernameW (#PCDATA)>
+  <!ELEMENT Print_papernameL (#PCDATA)>
+  <!ELEMENT Print_papernameZ (#PCDATA)>
+  <!ELEMENT fileUpDownUrl (#PCDATA)>
+  <!ELEMENT Config (#PCDATA)>
+  <!ELEMENT ShSms (#PCDATA)>
+  <!ELEMENT PadBusiness (#PCDATA)>
+  <!ELEMENT ServerPhone (#PCDATA)>
+  <!ELEMENT ServerMobile (#PCDATA)>
+  <!ELEMENT ServerQQ (#PCDATA)>
+  <!ELEMENT DeleteInterval (#PCDATA)>
+  <!ELEMENT TimeInterval (#PCDATA)>
+]>
+<SystemParameter>
+  <LocationInformation>
+    <!--货站号，网点号 -->
+    <Comid>
+    </Comid>
+    <Whid>
+    </Whid>
+    <Branchid>
+    </Branchid>
+    <!--初始化版本号 -->
+    <MainIniVersion>00000000</MainIniVersion>
+    <CusIniVersion>00000000</CusIniVersion>
+    <OthIniVersion>00000000</OthIniVersion>
+    <Cardid>
+    </Cardid>
+    <CarSty>
+    </CarSty>
+    <showDh>
+    </showDh>
+    <showDh_pdy>
+    </showDh_pdy>
+    <!--不干胶打印样式-->
+    <StickerSty>
+    </StickerSty>
+    <!--其他打印参数-->
+    <WaybillStyle>
+    </WaybillStyle>
+    <Freight_Yes>
+    </Freight_Yes>
+    <X_location>
+    </X_location>
+    <Y_location>
+    </Y_location>
+    <!--打印机和纸张设置 -->
+    <Print_nameW>
+    </Print_nameW>
+    <Print_nameL>
+    </Print_nameL>
+    <Print_nameZ>
+    </Print_nameZ>
+    <Print_papernameW>
+    </Print_papernameW>
+    <Print_papernameL>
+    </Print_papernameL>
+    <Print_papernameZ>
+    </Print_papernameZ>
+    <DeleteInterval>
+    </DeleteInterval>
+    <TimeInterval>
+    </TimeInterval>
+    <!--网站URL-->
+    <fileUpDownUrl>http://localhost:62335/WebWuliu/</fileUpDownUrl>
+  </LocationInformation>
+  <DBVer Ver="17">
+    <!--数据库版本号-->
+    <Config>1</Config>
+    <ShSms>1</ShSms>
+    <PadBusiness>1</PadBusiness>
+  </DBVer>
+  <ServerInfo>
+    <!--客服电话-->
+    <ServerPhone>
+    </ServerPhone>
+    <ServerMobile>027-87195696</ServerMobile>
+    <ServerQQ>985616888</ServerQQ>
+  </ServerInfo>
+</SystemParameter>

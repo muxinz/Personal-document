@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wbcolumns>
+  <getwb>
+  <ckbox columntype="checkbox" width="50">全选</ckbox>
+  <sendnum frozen="true" width="80">发送状态</sendnum>
+  <waybillid frozen="true" width="120">运单号</waybillid>
+  <startname width="70">发站</startname>
+  <endname width="70">到站</endname>
+  <transitdestination width="70">终到站</transitdestination>
+  <delivername width="90">发货人姓名</delivername>
+  <delivermobile width="90">发货人手机</delivermobile>
+  <receivername width="90">收货人姓名</receivername>
+  <receivermobile width="90">收货人手机</receivermobile>
+  <goodsnames width="100">货物</goodsnames>
+  <goodsnum width="70">件数</goodsnum>
+  <bypassname width="80">分流货站</bypassname>
+  <bypasswbid width="100">分流运单号</bypasswbid>
+  <coopphone width="100">提货联系电话</coopphone>
+  <coopaddress width="500">提货地址</coopaddress>
+  <openway visible="false">开单方式</openway>
+  <aiderid visible="false">主键</aiderid>
+  </getwb>
+  <operatetel>
+  <waybillid frozen="true" width="120">运单号</waybillid>
+  <receivername width="100">收信人姓名</receivername>
+  <receivermobile>收信人手机</receivermobile>
+  <startname width="70">发站</startname>
+  <endname width="70">到站</endname>
+  <transitdestination width="70">终到站</transitdestination>
+  <goodsnames width="100">货物</goodsnames>
+  <goodsnum width="70">件数</goodsnum>
+  <bypassname width="80">分流货站</bypassname>
+  <bypasswbid width="100">分流运单号</bypasswbid>
+  <coopphone width="100">提货联系电话</coopphone>
+  <coopaddress width="500">提货地址</coopaddress>
+  <openway visible="false">开单方式</openway>
+  <aiderid visible="false">主键</aiderid>
+  </operatetel>
+</wbcolumns>

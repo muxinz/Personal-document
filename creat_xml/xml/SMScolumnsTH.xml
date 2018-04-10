@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wbcolumns>
+  <operatetel>
+  <waybillid frozen="true" width="120">运单号</waybillid>
+  <selfid width="120">货号</selfid>
+  <receivername width="90">收信人姓名</receivername>
+  <receivermobile>收信人手机</receivermobile>
+  <startname width="70">发站</startname>
+  <endname width="70">到站</endname>
+  <transitdestination width="70">终到站</transitdestination>
+  <goodsnames width="100">货物</goodsnames>
+  <goodsnum width="70">件数</goodsnum>
+  <retf width="80" format="decimal">应收提付</retf>
+  <collectmoney width="100" format="decimal">应代收货款</collectmoney>
+  <transitfees width="100" format="decimal">应收中转费</transitfees>
+  <openway visible="false">开单方式</openway>
+  <aiderid visible="false">主键</aiderid>
+  </operatetel>
+</wbcolumns>

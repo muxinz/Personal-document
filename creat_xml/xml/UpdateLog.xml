@@ -1,0 +1,321 @@
+﻿<?xml version="1.0"?>
+<xmlFile XMLVersion="2.0.2.2" complete="0">
+<file>
+    <WebFile>File/shuhaiwl.exe</WebFile>
+    <LocFile>shuhaiwl.exe</LocFile>
+    <fSize>5274KB</fSize>
+    <Ver>25</Ver>
+</file>
+<file>
+    <WebFile>File/shserver.exe</WebFile>
+    <LocFile>shserver.exe</LocFile>
+    <fSize>5274KB</fSize>
+    <Ver>9</Ver>
+</file>
+<file>
+    <WebFile>File/InstallerWl.exe</WebFile>
+    <LocFile>InstallerWl.exe</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/Config.ish</WebFile>
+    <LocFile>Config.ish</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/PadBusiness.ish</WebFile>
+    <LocFile>PadBusiness.ish</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/ShSms.ish</WebFile>
+    <LocFile>ShSms.ish</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/ShwlEC.bat</WebFile>
+    <LocFile>ShwlEC.bat</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/SystemParameterAdd.xml</WebFile>
+    <LocFile>SystemParameterAdd.xml</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/SystemParameterSet.xml</WebFile>
+    <LocFile>SystemParameterSet.xml</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/msiexec.exe</WebFile>
+    <LocFile>msiexec.exe</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/Interop.shwl_21Lib.dll</WebFile>
+    <LocFile>Interop.shwl_21Lib.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/msjetoledb40.dll</WebFile>
+    <LocFile>msjetoledb40.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/Sh_Common_DLL.dll</WebFile>
+    <LocFile>Sh_Common_DLL.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>9</Ver>
+</file>
+<file>
+    <WebFile>File/ShDll.dll</WebFile>
+    <LocFile>ShDll.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>6</Ver>
+</file>
+<file>
+    <WebFile>File/ShSmsSend.dll</WebFile>
+    <LocFile>ShSmsSend.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/shwl_21.dll</WebFile>
+    <LocFile>shwl_21.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/System.Data.SQLite.DLL</WebFile>
+    <LocFile>System.Data.SQLite.DLL</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/ShUpLoad_dll.dll</WebFile>
+    <LocFile>ShUpLoad_dll.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/CNPOPSOFT.Controls.dll</WebFile>
+    <LocFile>CNPOPSOFT.Controls.dll</LocFile>
+    <fSize>221KB</fSize>
+    <Ver>3</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/Bank_zz.rpt</WebFile>
+    <LocFile>rpt\Bank_zz.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>3</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/Bank_zz_Lan.rpt</WebFile>
+    <LocFile>rpt\Bank_zz_Lan.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>3</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/CheckMoney.rpt</WebFile>
+    <LocFile>rpt\CheckMoney.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>3</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/CarFare.rpt</WebFile>
+    <LocFile>rpt\CarFare.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/ListSum.rpt</WebFile>
+    <LocFile>rpt\ListSum.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>8</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/ListSum_Lan.rpt</WebFile>
+    <LocFile>rpt\ListSum_Lan.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>8</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill_YSD.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill_YSD.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill1.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill1.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill2.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill2.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>5</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill3.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill3.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>5</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill4.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill4.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill6.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill6.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>2</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill7.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill7.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>6</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill8.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill8.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>5</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill9.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill9.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill11.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill11.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill12.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill12.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill13.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill13.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PatchPrintWayBill14.rpt</WebFile>
+    <LocFile>rpt\PatchPrintWayBill14.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>4</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PrintListTest.rpt</WebFile>
+    <LocFile>rpt\PrintListTest.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>6</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/PrintListTest_Lan.rpt</WebFile>
+    <LocFile>rpt\PrintListTest_Lan.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>6</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/ReceivedListSum.rpt</WebFile>
+    <LocFile>rpt\ReceivedListSum.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>5</Ver>
+</file>
+<file>
+    <WebFile>File/rpt/ReceivedListSum_Lan.rpt</WebFile>
+    <LocFile>rpt\ReceivedListSum_Lan.rpt</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>5</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_1.wav</WebFile>
+    <LocFile>voice\sound_1.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_2.wav</WebFile>
+    <LocFile>voice\sound_2.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_3.wav</WebFile>
+    <LocFile>voice\sound_3.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_4.wav</WebFile>
+    <LocFile>voice\sound_4.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_5.wav</WebFile>
+    <LocFile>voice\sound_5.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_6.wav</WebFile>
+    <LocFile>voice\sound_6.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_7.wav</WebFile>
+    <LocFile>voice\sound_7.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_8.wav</WebFile>
+    <LocFile>voice\sound_8.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_9.wav</WebFile>
+    <LocFile>voice\sound_9.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+<file>
+    <WebFile>File/voice/sound_10.wav</WebFile>
+    <LocFile>voice\sound_10.wav</LocFile>
+    <fSize>32KB</fSize>
+    <Ver>1</Ver>
+</file>
+</xmlFile>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SystemParameter[
+  <!ELEMENT Parameter (IsOpenBill,Para_1,Para_2,Para_3,Para_4,Para_5,Para_6,Para_7,Para_8,Para_9)>
+  <!ELEMENT PrintSet (Set_1,Set_2,Set_3,Set_4,Set_5,Set_6,Set_7,Set_8,Set_9)>
+  <!ELEMENT ShowSet (Show_1,Show_2,Show_3,Show_4,Show_5,Show_6,Show_7,Show_8,Show_9)>
+  <!ELEMENT OtherSet (Oth_1,Oth_2,Oth_3,Oth_4,Oth_5,Oth_6,Oth_7,Oth_8,Oth_9)>
+
+  <!ELEMENT IsOpenBill (#PCDATA)>
+  <!ELEMENT Para_1 (#PCDATA)>
+  <!ELEMENT Para_2 (#PCDATA)>
+  <!ELEMENT Para_3 (#PCDATA)>
+  <!ELEMENT Para_4 (#PCDATA)>
+  <!ELEMENT Para_5 (#PCDATA)>
+  <!ELEMENT Para_6 (#PCDATA)>
+  <!ELEMENT Para_7 (#PCDATA)>
+  <!ELEMENT Para_8 (#PCDATA)>
+  <!ELEMENT Para_9 (#PCDATA)>
+
+  <!ELEMENT Set_1 (#PCDATA)>
+  <!ELEMENT Set_2 (#PCDATA)>
+  <!ELEMENT Set_3 (#PCDATA)>
+  <!ELEMENT Set_4 (#PCDATA)>
+  <!ELEMENT Set_5 (#PCDATA)>
+  <!ELEMENT Set_6 (#PCDATA)>
+  <!ELEMENT Set_7 (#PCDATA)>
+  <!ELEMENT Set_8 (#PCDATA)>
+  <!ELEMENT Set_9 (#PCDATA)>
+
+  <!ELEMENT Show_1 (#PCDATA)>
+  <!ELEMENT Show_2 (#PCDATA)>
+  <!ELEMENT Show_3 (#PCDATA)>
+  <!ELEMENT Show_4 (#PCDATA)>
+  <!ELEMENT Show_5 (#PCDATA)>
+  <!ELEMENT Show_6 (#PCDATA)>
+  <!ELEMENT Show_7 (#PCDATA)>
+  <!ELEMENT Show_8 (#PCDATA)>
+  <!ELEMENT Show_9 (#PCDATA)>
+
+  <!ELEMENT Oth_1 (#PCDATA)>
+  <!ELEMENT Oth_2 (#PCDATA)>
+  <!ELEMENT Oth_3 (#PCDATA)>
+  <!ELEMENT Oth_4 (#PCDATA)>
+  <!ELEMENT Oth_5 (#PCDATA)>
+  <!ELEMENT Oth_6 (#PCDATA)>
+  <!ELEMENT Oth_7 (#PCDATA)>
+  <!ELEMENT Oth_8 (#PCDATA)>
+  <!ELEMENT Oth_9 (#PCDATA)>
+]>
+<SystemParameter Ver="1">
+  <Parameter>
+    <IsOpenBill></IsOpenBill>
+    <Para_1></Para_1>
+    <Para_2></Para_2>
+    <Para_3></Para_3>
+    <Para_4></Para_4>
+    <Para_5></Para_5>
+    <Para_6></Para_6>
+    <Para_7></Para_7>
+    <Para_8></Para_8>
+    <Para_9></Para_9>
+  </Parameter>
+
+  <PrintSet>
+    <Set_1></Set_1>
+    <Set_2></Set_2>
+    <Set_3></Set_3>
+    <Set_4></Set_4>
+    <Set_5></Set_5>
+    <Set_6></Set_6>
+    <Set_7></Set_7>
+    <Set_8></Set_8>
+    <Set_9></Set_9>
+  </PrintSet>
+
+  <ShowSet>
+    <Show_1></Show_1>
+    <Show_2></Show_2>
+    <Show_3></Show_3>
+    <Show_4></Show_4>
+    <Show_5></Show_5>
+    <Show_6></Show_6>
+    <Show_7></Show_7>
+    <Show_8></Show_8>
+    <Show_9></Show_9>
+  </ShowSet>
+
+  <OtherSet>
+    <Oth_1></Oth_1>
+    <Oth_2></Oth_2>
+    <Oth_3></Oth_3>
+    <Oth_4></Oth_4>
+    <Oth_5></Oth_5>
+    <Oth_6></Oth_6>
+    <Oth_7></Oth_7>
+    <Oth_8></Oth_8>
+    <Oth_9></Oth_9>
+  </OtherSet>
+</SystemParameter>

@@ -1,0 +1,24 @@
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\bin\Debug\creat_xml.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\bin\Debug\creat_xml.exe
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\bin\Debug\creat_xml.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.exe
+c:\users\administrator\documents\visual studio 2015\Projects\creat_xml\creat_xml\obj\Debug\creat_xml.pdb
+E:\creat_xml\creat_xml\bin\Debug\creat_xml.exe.config
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.exe
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.pdb
+E:\creat_xml\creat_xml\bin\Debug\creat_xml.exe
+E:\creat_xml\creat_xml\bin\Debug\creat_xml.pdb
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.Form1.resources
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.Properties.Resources.resources
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.csproj.GenerateResource.Cache
+E:\creat_xml\creat_xml\obj\Debug\creat_xml.csprojResolveAssemblyReference.cache
+E:\附加 learn\creat_xml\creat_xml\bin\Debug\creat_xml.exe.config
+E:\附加 learn\creat_xml\creat_xml\obj\Debug\creat_xml.exe
+E:\附加 learn\creat_xml\creat_xml\obj\Debug\creat_xml.pdb
+D:\github\--\creat_xml\creat_xml\bin\Debug\creat_xml.exe.config
+D:\github\--\creat_xml\creat_xml\obj\Debug\creat_xml.exe
+D:\github\--\creat_xml\creat_xml\obj\Debug\creat_xml.pdb

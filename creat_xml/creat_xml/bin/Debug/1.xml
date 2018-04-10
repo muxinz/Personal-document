@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Employees>
+  <Node g="where">
+    <tittle>11111</tittle>
+    <tittle2>22222</tittle2>
+    <author>这里是tittle第2行</author>
+  </Node>
+  <Node g="where">
+    <tittle3>3333333</tittle3>
+    <tittle4>3333334</tittle4>
+    <author>这里是tittle第2行</author>
+  </Node>
+</Employees>

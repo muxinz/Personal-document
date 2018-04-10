@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ErrorCode_Description Ver="1">
+<_https>
+<_http>
+<code>500</code><descript>错误代号：服务器500 错误描述：服务器发生内部错误，暂时请不要操作该功能同时联系数海客服！</descript>
+</_http>
+
+<_http>
+<code>404</code><descript>错误代号：服务器404 错误描述：服务器正在忙，请稍后访问！</descript>
+</_http>
+
+<_http>
+<code>notnetwork</code><descript>错误代号：2015111805 错误描述：电脑没有连接网络，请检查网络！</descript>
+</_http>
+
+<_http>
+<code>internalservererror</code><descript>错误代号：服务器500 错误描述：服务器内部发生错误，暂时请不要操作该功能同时联系数海客服！</descript>
+</_http>
+</_https>
+
+<_sqls>
+<_sql><code>2627</code><descript>错误代号：数据库2627 错误描述：服务器数据冲突，请放弃该操作！</descript></_sql>
+<_sql><code>2812</code><descript>错误代号：数据库2812 错误描述：找不到存储过程，暂时请不要操作该功能同时联系数海客服！</descript></_sql>
+</_sqls>
+
+<_readtoends>
+<_readtoend><code>outofmemory</code><descript>温馨提示：2015111804 查询数据量太大，电脑硬件不支持，请关闭其他业务功能或者缩短查询时间试试！</descript></_readtoend>
+</_readtoends>
+
+<_keywords>
+<_keyword><code>outofmemory</code><descript>温馨提示：2015111803 查询数据量太大，电脑硬件不支持，请关闭其他业务功能或者缩短查询时间试试！</descript></_keyword>
+</_keywords>
+
+<_merge_add_todss>
+<_merge_add_tods><code>maxline</code><descript>错误代号：2015111802 错误描述：查询的数据达到最大限制总数,如果继续查询会导致电脑硬件不支持！请关闭其他业务功能或者缩短查询时间试试！</descript></_merge_add_tods>
+</_merge_add_todss>
+<_commons>
+<_common><code>commonerror</code><descript>错误代号：2015111801 错误描述：由于网络问题未能获取数据，请检查网络！</descript></_common>
+</_commons>
+</ErrorCode_Description>

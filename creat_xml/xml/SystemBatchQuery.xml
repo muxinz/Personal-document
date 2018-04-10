@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 分批查询参数 -->
+<SystemParameter Ver="1">
+  <AllMaxNum>
+    <!-- 根据查询数据列数设置的默认的最大数据量,暂时只用fifty_five -->
+    <fifteen>400000</fifteen>
+    <twenty_five>350000</twenty_five>
+    <thirty_five>300000</thirty_five>
+    <forty_five>250000</forty_five>
+    <fifty_five>200000</fifty_five>
+    <sixty_five>150000</sixty_five>
+    <seventy_five>100000</seventy_five>
+    <eighty_five>50000</eighty_five>
+  </AllMaxNum>
+  <PageMaxNum>
+    <!-- 设置的默认的每页查询的行数 -->
+    <maxRows>10000</maxRows>
+  </PageMaxNum>
+  <AllMaxNum_U>
+    <!-- 用户设置的最大数据量 -->
+    <WaybillAll_M></WaybillAll_M>
+  </AllMaxNum_U>
+  <PageMaxNum_U>
+    <!-- 用户设置的每页查询的行数 -->
+    <WaybillAll_P></WaybillAll_P>
+  </PageMaxNum_U>
+</SystemParameter>
